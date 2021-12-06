@@ -15,7 +15,7 @@
 
             <div class="col-12">
 
-                <div class="card flex-md-row mb-4 box-shadow h-md-250">
+                <div class="card flex-md-row mb-4">
                     <div class="card-body d-flex flex-column align-items-start">
                         <strong class="d-inline-block mb-2 text-primary"><?php echo $item['title']; ?></strong>
                         <?php if (isset($item['category'])): ?>
