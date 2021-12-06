@@ -18,10 +18,10 @@
                 <div class="card flex-md-row mb-4">
                     <div class="card-body d-flex flex-column align-items-start">
                         <strong class="d-inline-block mb-2 text-primary"><?php echo $item['title']; ?></strong>
-                        <?php if (isset($item['category'])): ?>
-                        <h3 class="mb-0">
-                            <a class="text-dark" href="#"><?php echo $item['category']; ?></a>
-                        </h3>
+                        <?php if (isset($item['categories'][0])): ?>
+                        <h5 class="mb-0">
+                            <a class="text-dark" href="#"><?php echo $item['categories'][0]; ?></a>
+                        </h5>
                         <?php endif; ?>
                         <div class="mb-1 text-muted"><?php echo $item['date']; ?></div>
 
