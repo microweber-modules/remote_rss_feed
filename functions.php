@@ -31,16 +31,17 @@ function get_rss_data ($url, $limit) {
 
         $enclosure = $item->get_enclosure();
         $content = html_entity_decode($item->get_content());
-        $pos = strpos($content, '.');
-        if ($pos) {
-            $content = substr($content, 0, $pos + 1);
-        }
+
+        $description = html_entity_decode($item->get_content());
+        $description = strip_tags($description);
+        $description = character_limiter($description,150,'...');
 
         $data['records'][] = [
             'title' => html_entity_decode($item->get_title()),
             'link' => $item->get_link(),
             'date' => $date,
-            /* 'content' => $content, */
+            'content' => $content,
+            'description' => $description,
             'image' => (($enclosure) ? $enclosure->get_link() : null)
         ];
     }

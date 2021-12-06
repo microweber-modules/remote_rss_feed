@@ -25,13 +25,13 @@
                         <?php endif; ?>
                         <div class="mb-1 text-muted"><?php echo $item['date']; ?></div>
 
-                        <?php if (isset($item['description'])): ?>
+                        <?php if (isset($item['content'])): ?>
                         <p class="card-text mb-auto">
-                            <?php echo $item['description']; ?>
+                            <?php echo $item['content']; ?>
                         </p>
                         <?php endif; ?>
 
-                        <a href="<?php echo $item['link']; ?>"><?php _e('Read more');?></a>
+                        <a href="<?php echo $item['link']; ?>" target="_blank"><?php _e('Read more');?></a>
                     </div>
                     <?php if (isset($item['image'])): ?>
                     <img class="card-img-right flex-auto d-none d-md-block"
