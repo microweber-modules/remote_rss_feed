@@ -1,0 +1,17 @@
+{
+  "name": "microweber-modules/remote_rss_feedr",
+  "description": "Remote RSS Feed",
+  "license": "MIT",
+  "homepage": "https://microweber.org/modules/microweber-modules/remote_rss_feed",
+  "authors": [
+    {
+      "name": "Microweber",
+      "email": "support@microweber.com"
+    }
+  ],
+  "keywords": [
+    "remote_rss_feed"
+  ],
+  "type": "microweber-module",
+  "target-dir": "remote_rss_feed"
+}
